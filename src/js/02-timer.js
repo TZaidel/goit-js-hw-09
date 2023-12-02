@@ -37,12 +37,11 @@ function startTimer(event) {
 
   timerId = setInterval(() => {
 
+    deltaTime -= 1000
     if (deltaTime <= 0) {
-      clearInterval(timerId)
+          clearInterval(timerId)
     } else {
-      deltaTime -= 1000
-      updateTimer()
-      console.log(deltaTime)//бачу, що зупиняється на -1 але не можу знайти чому, help
+          updateTimer()
     }
   }, 1000);
 }

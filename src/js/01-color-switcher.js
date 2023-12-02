@@ -4,15 +4,19 @@ let timerId = null
 
 startBtn.addEventListener('click', onStartClick)
 stopBtn.addEventListener('click', onStopClick)
+    stopBtn.setAttribute('disabled', '')
 
 function onStartClick(event) {
-    startBtn.setAttribute('disabled', '')
+  startBtn.setAttribute('disabled', '')
+      stopBtn.removeAttribute('disabled', '')
+
     timerId = setInterval(() => {
        document.body.style.backgroundColor = getRandomHexColor()
     },1000)
 }
 
 function onStopClick() {
+      stopBtn.setAttribute('disabled', '')
     clearInterval(timerId)
     startBtn.removeAttribute('disabled', '')
 }
