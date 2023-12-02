@@ -19,10 +19,13 @@ function onSubmit(event) {
       .then(({ position, delay }) => {
           if (i+1 === amount) {
           button.removeAttribute('disabled', '')
-        }
+          }
         Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
     })
-    .catch(({ position, delay }) => {
+      .catch(({ position, delay }) => {
+                if (i+1 === amount) {
+          button.removeAttribute('disabled', '')
+          }
         Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
     })}
 }
