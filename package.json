@@ -2,17 +2,16 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://TZaidel.github.io/goit-js-hw-09",
+  "homepage": "https://TZaidel.github.io/timer_color-switcher_promises",
   "scripts": {
     "start": "parcel src/*.html --port 2222",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
+    "build": "parcel build src/*.html --public-url /timer_color-switcher_promises/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
